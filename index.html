@@ -39,50 +39,66 @@
 
             <nav
               id="nav-menu"
-              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Beranda</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Tentang Saya</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portfolio"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Portfolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#clients"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Clients</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#blog"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Blog</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#contact"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
                     >Contact</a
                   >
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -93,23 +109,27 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Start -->
-    <section id="home" class="pt-36">
+    <section id="home" class="pt-36 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
             <h1 class="text-base font-semibold text-primary md:text-xl">
               Hallo Semua 👋, Saya
               <span
-                class="mt-1 mb-3 block text-4xl font-bold text-dark lg:text-5xl"
+                class="mt-1 mb-3 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
                 >Syaiful Iqbal</span
               >
             </h1>
-            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">
+            <h2
+              class="mb-5 text-lg font-medium text-secondary dark:text-white lg:text-2xl"
+            >
               Web Development & <span class="text-dark">Content Creator</span>
             </h2>
             <p class="mb-10 font-medium leading-relaxed text-secondary">
               Ini adalah website Porfolio saya yang dibuat dengan
-              <span class="font-bold text-dark">Tailwind CSS</span>
+              <span class="font-bold text-dark dark:text-white"
+                >Tailwind CSS</span
+              >
             </p>
             <a
               href="#"
@@ -122,10 +142,10 @@
               <img
                 src="dist/img/Ballsky.png"
                 alt="Ballsky"
-                class="mx-auto max-w-full"
+                class="relative z-10 mx-auto max-w-full"
               />
               <span
-                class="absolute -bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125"
+                class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125"
               >
                 <svg
                   width="400"
@@ -148,14 +168,16 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
             <h4 class="mb-3 text-lg font-bold uppercase text-primary">
               Tentang Saya
             </h4>
-            <h2 class="mb-5 max-w-md text-3xl font-bold text-dark lg:text-4xl">
+            <h2
+              class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl"
+            >
               Selamat Datang di Website Portfolio saya
             </h2>
             <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">
@@ -166,7 +188,7 @@
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="mb-4 text-2xl font-semibold text-dark lg:pt-10 lg:text-3xl"
+              class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl"
             >
               My Social Media
             </h3>
@@ -179,7 +201,7 @@
               <a
                 href="https://www.instagram.com/syaiful_iqbal26/"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -196,7 +218,7 @@
               <a
                 href="https://www.facebook.com/syaifuliqbal26"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -214,7 +236,7 @@
               <a
                 href="https://twitter.com/BaIIsky26"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -232,7 +254,7 @@
               <a
                 href="https://www.youtube.com/@Ballsky"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -250,7 +272,7 @@
               <a
                 href="https://www.tiktok.com/@syaifuliqbal26"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -268,7 +290,7 @@
               <a
                 href="https://www.linkedin.com/in/syaiful-iqbal-162698247/"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -286,7 +308,7 @@
               <a
                 href="https://github.com/Ballsky26"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -304,7 +326,7 @@
               <a
                 href="https://discord.com/channels/@Ballsky#4691"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -322,7 +344,7 @@
               <a
                 href="https://steamcommunity.com/id/ballsky26/"
                 target="_blank"
-                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:text-slate-300"
                 ><svg
                   role="img"
                   width="20"
@@ -344,13 +366,13 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="bg-slate-100 pt-36 pb-16">
+    <section id="portfolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Porfolio</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
             >
               Project Terbaru
             </h2>
@@ -370,7 +392,9 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
               Ballsky Landing Page
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -386,7 +410,9 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
               Ballsky Landing Page
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -402,7 +428,9 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
               Ballsky Landing Page
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -418,7 +446,9 @@
                 width="w-full"
               />
             </div>
-            <h3 class="mt-5 mb-3 text-xl font-semibold text-dark">
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
               Ballsky Landing Page
             </h3>
             <p class="text-base font-medium text-secondary">
@@ -432,13 +462,13 @@
     <!-- Portfolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="clients" class="bg-slate-700 pt-36 pb-32">
+    <section id="clients" class="bg-slate-700 pt-36 pb-32 dark:bg-slate-300">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Clients</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-white dark:text-dark sm:text-4xl lg:text-5xl"
             >
               Yang pernah Bekerja Sama
             </h2>
@@ -482,13 +512,13 @@
     <!-- Clients Section End -->
 
     <!-- Blog Section Start -->
-    <section id="blog" class="bg-slate-100 pt-36 pb-32">
+    <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
             >
               Tulisan Terkini
             </h2>
@@ -501,7 +531,9 @@
         </div>
         <div class="flex flex-wrap">
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800"
+            >
               <img
                 src="https://source.unsplash.com/360x200?programming"
                 alt="Programming"
@@ -511,7 +543,7 @@
                 <h3>
                   <a
                     href="#"
-                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
                     >Programming</a
                   >
                 </h3>
@@ -528,7 +560,9 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800"
+            >
               <img
                 src="https://source.unsplash.com/360x200?sports"
                 alt="Sports"
@@ -538,7 +572,7 @@
                 <h3>
                   <a
                     href="#"
-                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
                     >Sports</a
                   >
                 </h3>
@@ -555,7 +589,9 @@
             </div>
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg">
+            <div
+              class="mb-10 overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800"
+            >
               <img
                 src="https://source.unsplash.com/360x200?gaming"
                 alt="Gaming"
@@ -565,7 +601,7 @@
                 <h3>
                   <a
                     href="#"
-                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
                     >Gaming</a
                   >
                 </h3>
@@ -587,13 +623,13 @@
     <!-- Blog Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32">
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Contact</h4>
             <h2
-              class="mb-4 text-3xl font-bold text-dark sm:text-4xl lg:text-5xl"
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
             >
               Hubungi Kami
             </h2>
